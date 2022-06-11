@@ -1,0 +1,9 @@
+#ul_list {
+    display: block;
+    background-color: red;
+    color: green;
+}
+
+body {
+    background-color: blue;
+}
