@@ -13,7 +13,7 @@ document.getElementById("add__btn")?.addEventListener("click", function () {
     }
     if (count <= 15 && inputValue.length >= 1) {
         (<HTMLInputElement>document.getElementById('span__warning')).style.display = 'none';
-        let listHTML = `<li style="text-align: center; height: 50px; line-height: 50px" class="li__items" id="list__item-${count}">${inputValue}<button onclick="deleteList(${count})" class="btn btn-danger btn__remove" type="button" style=position: relative; margin-top: 5px; margin-right: 5px; float: right;" type="button">&times;</button></li>`;
+        let listHTML = `<li style="text-align: center; height: 50px; line-height: 50px" class="li__items" id="list__item-${count}">${inputValue}<button onclick="deleteList(${count})" class="btn btn-danger btn__remove" type="button" style="position: relative; margin-top: 5px; margin-right: 5px; float: right;" type="button">&times;</button></li>`;
         document.getElementById("ul__list")?.insertAdjacentHTML('beforebegin', listHTML);
         (<HTMLInputElement>document.getElementById('input__item')).value = '';
         console.log(count);
